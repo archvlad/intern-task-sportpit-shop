@@ -12,7 +12,8 @@
         <li><a href="gainers.html">Гейнеры</a></li>
         <li><a href="aminos.html">Аминокислоты</a></li>
         <li><a href="vitamins.html">Витамины</a></li>
-        <li style="float: right; cursor: pointer;"><a onclick="changeTheme()" style="height: 20px;"><img id="theme-icon" style="width: 20px; height: 20px;" src="img/moon.png"></a>
+        <li style="float: right; cursor: pointer;"><a onclick="changeTheme()" style="height: 20px;"><img id="theme-icon"
+                    style="width: 20px; height: 20px;" src="img/moon.png"></a>
         </li>
     </ul>
     <button class="to-top" onclick="toTop()"><img style="width: 30px; height: 30px;" src="img/arrow_up.png"></button>
@@ -48,29 +49,30 @@
             <h2>Оформление заказа</h2>
             <button class="close">⨉</button>
         </div>
-        <div class="modal-content">
-            <form>
+        <form>
+            <div class="modal-content">
                 <div class="form-grid">
                     <span>Количество:</span>
-                    <input type="number" name="qtyu">
+                    <input type="number" name="qty" min="0" required>
                     <span>Вкус:</span>
                     <div>
-                        <input type="radio" name="flavour">
+                        <input type="radio" name="flavour" value="Шоколадный" required>
                         <label>Шоколадный</label><br>
-                        <input type="radio" name="flavour">
+                        <input type="radio" name="flavour" value="Ванильный" required>
                         <label>Ванильный</label><br>
-                        <input type="radio" name="flavour">
+                        <input type="radio" name="flavour" value="Клубничный" required>
                         <label>Клубничный</label>
                     </div>
                     <span style="grid-column: 1 / 3">Комментарий:</span>
-                    <textarea style="grid-column: 1 / 3" type="text" name="comment"></textarea>
+                    <textarea style="grid-column: 1 / 3; resize: none; height: 60px;" type="text" name="comment"
+                        maxlength="2000"></textarea>
                 </div>
-            </form>
-        </div>
-        <div class="modal-footer">
-            <button class="btn modal-close" onclick="handleClose()">Закрыть</button>
-            <button class="btn" onclick="handleBuy()">Купить</button>
-        </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn modal-close" onclick="handleClose()">Закрыть</button>
+                <button class="btn" id="buy" type="submit" onclick="handleBuy()">Купить</button>
+            </div>
+        </form>
     </div>
     <div class="overlay"></div>
     <script src="js/script.js"></script>

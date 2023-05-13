@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #212A3E;
+    background-color: #232946;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -8,6 +8,7 @@
     left: 0;
     width: 100%;
     overflow: hidden;
+    z-index: 1;
 }
 
 .navbar li {
@@ -48,7 +49,9 @@ body {
     color: rgb(241, 241, 241);
     text-align: center;
     background-color: #212A3E;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 25px 50px -12px;
     transition: opacity 0.5s;
+    z-index: 1;
 }
 
 .to-top:hover {
@@ -76,9 +79,9 @@ body {
 .product_card {
     background-color: #fffffe;
     padding: 10px;
-    width: fit-content;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 10px;
+    transition: opacity 1s;
 }
 
 .product_card img {
@@ -133,7 +136,7 @@ body {
 
 .modal {
     display: none;
-    z-index: 2;
+    z-index: 3;
     background-color: #fffffe;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 15px;
@@ -159,7 +162,7 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
+    z-index: 2;
 }
 
 .modal-header {
