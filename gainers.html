@@ -2,18 +2,29 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/light-theme.css" id="theme">
     <title>Гейнеры - Спортивное питание</title>
 </head>
 
 <body>
     <ul class="navbar">
-        <li><a href="proteins.html">Протеины</a></li>
-        <li><a href="gainers.html">Гейнеры</a></li>
-        <li><a href="aminos.html">Аминокислоты</a></li>
-        <li><a href="vitamins.html">Витамины</a></li>
-        <li style="float: right; cursor: pointer;"><a onclick="changeTheme()" style="height: 20px;"><img id="theme-icon" style="width: 20px; height: 20px;" src="img/moon.png"></a>
-        </li>
+        <div class="toggle">
+            <li><a style="height: 20px;"><img style="width: 20px; height: 20px;" src="img/menu.png"></a>
+            </li>
+        </div>
+        <div class="navbar-links">
+            <li><a href="proteins.html">Протеины</a></li>
+            <li><a href="gainers.html">Гейнеры</a></li>
+            <li><a href="aminos.html">Аминокислоты</a></li>
+            <li><a href="vitamins.html">Витамины</a></li>
+        </div>
+        <div>
+            <li style="float: right; cursor: pointer;"><a onclick="changeTheme()" style="height: 20px;"><img
+                        id="theme-icon" style="width: 20px; height: 20px;" src="img/moon.png"></a>
+            </li>
+        </div>
     </ul>
     <button class="to-top" onclick="toTop()"><img style="width: 30px; height: 30px;" src="img/arrow_up.png"></button>
     <div class="content">

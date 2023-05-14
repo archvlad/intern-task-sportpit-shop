@@ -9,6 +9,31 @@
     width: 100%;
     overflow: hidden;
     z-index: 1;
+    display: grid;
+    grid-template-columns: fit-content(800px) 1fr;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.toggle {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .toggle {
+        display: block;
+    }
+
+    .navbar-links {
+        grid-row: 2;
+        grid-column: span 2;
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
 }
 
 .navbar li {

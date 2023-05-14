@@ -1,3 +1,28 @@
+let theme = document.querySelector('#theme')
+let themeIcon = document.querySelector('#theme-icon')
+
+function changeTheme() {
+    if (theme.getAttribute('href') == 'css/light-theme.css') {
+        localStorage.setItem('theme', 'dark')
+        theme.href = 'css/dark-theme.css'
+        themeIcon.setAttribute('src', 'img/sun.png')
+    } else {
+        localStorage.setItem('theme', 'light')
+        theme.href = 'css/light-theme.css'
+        themeIcon.setAttribute('src', 'img/moon.png')
+
+    }
+}
+
+if (localStorage.getItem('theme') == 'dark') {
+    theme.href = 'css/dark-theme.css'
+    themeIcon.setAttribute('src', 'img/sun.png')
+} else {
+    theme.href = 'css/light-theme.css'
+    themeIcon.setAttribute('src', 'img/moon.png')
+
+}
+
 let toTopBtn = document.querySelector(".to-top");
 
 function scrollForBtn() {
@@ -673,27 +698,7 @@ if (window.location.href.includes('proteins')) {
     fillProducts(products.vitamins)
 }
 
-let theme = document.querySelector('#theme')
-let themeIcon = document.querySelector('#theme-icon')
+const toggle = document.querySelector('.toggle')
+const navbarLinks = document.querySelector('.navbar-links')
 
-function changeTheme() {
-    if (theme.getAttribute('href') == 'css/light-theme.css') {
-        localStorage.setItem('theme', 'dark')
-        theme.href = 'css/dark-theme.css'
-        themeIcon.setAttribute('src', 'img/sun.png')
-    } else {
-        localStorage.setItem('theme', 'light')
-        theme.href = 'css/light-theme.css'
-        themeIcon.setAttribute('src', 'img/moon.png')
-
-    }
-}
-
-if (localStorage.getItem('theme') == 'dark') {
-    theme.href = 'css/dark-theme.css'
-    themeIcon.setAttribute('src', 'img/sun.png')
-} else {
-    theme.href = 'css/light-theme.css'
-    themeIcon.setAttribute('src', 'img/moon.png')
-
-}
+toggle.onclick = () => { navbarLinks.classList.toggle('active') }
