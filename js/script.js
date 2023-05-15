@@ -96,7 +96,7 @@ let products = {
             img: "https://www.brutalshop.ru/upload/resize_cache/iblock/4e7/220_200_1/nx1ibrnvj19p765g19ejycepjaa8hatm.jpg",
             title: "Atlecs Whey Protein 454 g, / Atlecs",
             price: "1 692 руб.",
-            added: "2022/0/5"
+            added: "2022/1/5"
         },
         {
             img: "https://www.brutalshop.ru/upload/resize_cache/iblock/fa3/220_200_1/fa3a96de8a4773ea8cbf1eeb1ecbabc5.jpg",
@@ -150,7 +150,7 @@ let products = {
             img: "https://www.brutalshop.ru/upload/resize_cache/iblock/470/220_200_1/4824b7sxvmgmc14hc95cr4mjbxny286t.jpeg",
             title: "Fit Foods Mutant Whey, 2270 гр. / Fit Foods",
             price: "6 170 руб.",
-            added: "2022/0/13"
+            added: "2022/1/13"
         },
         {
             img: "https://www.brutalshop.ru/upload/resize_cache/iblock/b34/220_200_1/atzeb6bqrvmm6m4ctd60qqtg9wj7ypaz.JPG",
@@ -380,7 +380,7 @@ let products = {
             img: "https://www.brutalshop.ru/upload/resize_cache/iblock/9da/220_200_1/mzpb4l1j3dauw27lqysythackxwqzqzc.jpeg",
             title: "Myprotein Impact Weight Gainer V2, 2500 g / Myprotein",
             price: "3 140 руб.",
-            added: "2022/0/5"
+            added: "2022/1/5"
         },
         {
             img: "https://www.brutalshop.ru/upload/resize_cache/iblock/dd7/220_200_1/bmg3hzmp5s7pv0huyx2vwp6dtu29y5f6.jpeg",
